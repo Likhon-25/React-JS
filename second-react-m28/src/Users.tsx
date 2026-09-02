@@ -2,15 +2,17 @@ import { use } from "react"
 import UserCard from "./UserCard";
 
 function Users({UserDataPromise}){
-    const users = use(UserDataPromise)
+
+    const users = use(UserDataPromise);
     console.log(users);
+   
     return(
-        <div>
-            <h2>Users:{users.length} </h2>
+       <div> 
+            <h3>Users:{users.length} </h3>
             {
-                users.map(user => <UserCard user={user} ></UserCard>)
+                users.map(user =>  <UserCard user={user}></UserCard>)
             }
-        </div>
+       </div>
     )
 }
 

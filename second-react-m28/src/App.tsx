@@ -4,11 +4,18 @@ import './App.css'
 // import Cart from './Cart'
 // import Counter from './Counter'
 import Users from './Users'
+import Posts from './Posts'
 
 const UserDataPromise = async() =>{
-  const res = await fetch('https://jsonplaceholder.typicode.com/users')
+  const res = await fetch("https://jsonplaceholder.typicode.com/users")
   const data = await res.json();
-  return data
+  return data;
+}
+
+const PostDataPromise = async() =>{
+  const res = await fetch("https://jsonplaceholder.typicode.com/posts") 
+  const data = await res.json();
+  return data;
 }
 
 function App() {
@@ -24,8 +31,12 @@ function App() {
   return (
     <>
       
-      <Suspense fallback={<p>Loading...</p>}>
-        <Users UserDataPromise={UserDataPromise()}></Users>
+      <Suspense fallback={<h3>Loading Users...</h3>}>
+        <Users UserDataPromise={UserDataPromise()} ></Users>
+      </Suspense>
+
+      <Suspense fallback={<p>Loading Posts Data...</p>}>
+        <Posts PostDataPromise={PostDataPromise()}></Posts>
       </Suspense>
     {/* <Counter></Counter>
     <Batter></Batter> */}
