@@ -5,6 +5,7 @@ import './App.css'
 // import Counter from './Counter'
 import Users from './Users'
 import Posts from './Posts'
+import Todos from './Todos'
 
 const UserDataPromise = async() =>{
   const res = await fetch("https://jsonplaceholder.typicode.com/users")
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <>
+      <Todos></Todos>
       
       <Suspense fallback={<h3>Loading Users...</h3>}>
         <Users UserDataPromise={UserDataPromise()} ></Users>
