@@ -8,10 +8,18 @@ export interface CountryProps {
 export default function Country({ country }: CountryProps) {
   const [visited, setVisited] = useState<boolean>(false);
   const handleVisited = () => {
-    setVisited(true);
+    // setVisited(true);
+    // ---------- or ----------
+    // if (visited) {
+    //   setVisited(false);
+    // } else {
+    //   setVisited(true);
+    // }
+    // ---------- or ----------
+    setVisited(!visited);
   };
   return (
-    <div className={`country ${visited ? 'country-visited' : ''}`}>
+    <div className={`country ${visited ? "country-visited" : ""}`}>
       <h3>{country.name.common}</h3>
       <img src={country.flags.flags.png} alt="" />
       <h4>Capital: {country.capital.capital}</h4>
