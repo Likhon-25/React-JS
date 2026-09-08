@@ -18,8 +18,10 @@ const Players = ({ playersPromise, coin, setCoin }: PlayersProps) => {
   const players = use(playersPromise);
   // console.log(players);
 
-  const [buttonType, setButtonType] = useState("available");
-  console.log(buttonType);
+  const [buttonType, setButtonType] = useState<"available" | "selected">(
+    "available",
+  );
+  const [selectedPlayers, setSelectedPlayers] = useState<Iplayer[]>([]);
 
   const handleUpdateBtnType = (type: "available" | "selected") => {
     setButtonType(type);
@@ -49,9 +51,18 @@ const Players = ({ playersPromise, coin, setCoin }: PlayersProps) => {
         </div>
       </div>
       {buttonType === "available" ? (
-        <AvailablePlayers players={players} coin={coin} setCoin={setCoin} />
+        <AvailablePlayers
+          players={players}
+          coin={coin}
+          setCoin={setCoin}
+          selectedPlayers={selectedPlayers}
+          setSelectedPlayers={setSelectedPlayers}
+        />
       ) : (
-        <SelectedPlayers />
+        <SelectedPlayers
+          selectedPlayers={selectedPlayers}
+          setSelectedPlayers={setSelectedPlayers}
+        />
       )}
     </div>
   );

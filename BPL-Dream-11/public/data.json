@@ -6,7 +6,7 @@
     "playerTyype": "All-Rounder",
     "bowlingStyle": "Left-arm orthodox",
     "battingStyle": "Left-hand bat",
-    "price": 80
+    "price": 8050
   },
   {
     "PlayerName": "Mustafizur Rahman",
@@ -15,7 +15,7 @@
     "playerTyype": "Bowler",
     "bowlingStyle": "Left-arm fast-medium",
     "battingStyle": "Left-hand bat",
-    "price": 60
+    "price": 605
   },
   {
     "PlayerName": "Taskin Ahmed",
@@ -24,7 +24,7 @@
     "playerTyype": "Bowler",
     "bowlingStyle": "Right-arm fast",
     "battingStyle": "Right-hand bat",
-    "price": 55
+    "price": 555
   },
   {
     "PlayerName": "Litton Das",
@@ -32,7 +32,7 @@
     "playerTyype": "Wicket-Keeper",
     "bowlingStyle": "Right-arm medium",
     "battingStyle": "Right-hand bat",
-    "price": 65
+    "price": 655
   },
   {
     "PlayerName": "Towhid Hridoy",
@@ -40,7 +40,7 @@
     "playerTyype": "Batter",
     "bowlingStyle": "Right-arm off-break",
     "battingStyle": "Right-hand bat",
-    "price": 45
+    "price": 455
   },
   {
     "PlayerName": "Najmul Hossain Shanto",
@@ -48,7 +48,7 @@
     "playerTyype": "Batter",
     "bowlingStyle": "Right-arm off-break",
     "battingStyle": "Left-hand bat",
-    "price": 50
+    "price": 505
   },
   {
     "PlayerName": "Mehidy Hasan Miraz",
@@ -56,7 +56,7 @@
     "playerTyype": "All-Rounder",
     "bowlingStyle": "Right-arm off-break",
     "battingStyle": "Right-hand bat",
-    "price": 55
+    "price": 555
   },
   {
     "PlayerName": "Rishad Hossain",
@@ -64,7 +64,7 @@
     "playerTyype": "Bowler",
     "bowlingStyle": "Right-arm leg-break",
     "battingStyle": "Right-hand bat",
-    "price": 40
+    "price": 405
   },
   {
     "PlayerName": "Tanzid Hasan",
@@ -72,7 +72,7 @@
     "playerTyype": "Batter",
     "bowlingStyle": "Right-arm off-break",
     "battingStyle": "Left-hand bat",
-    "price": 35
+    "price": 3555
   },
   {
     "PlayerName": "Jaker Ali",
@@ -80,6 +80,6 @@
     "playerTyype": "Wicket-Keeper",
     "bowlingStyle": "Right-arm medium",
     "battingStyle": "Right-hand bat",
-    "price": 35
+    "price": 350
   }
 ]

@@ -1,21 +1,62 @@
 import { useState, type Dispatch, type SetStateAction } from "react";
 import type { Iplayer } from "../../types/type";
 import { FaUser, FaStar, FaTrophy } from "react-icons/fa";
+import { Bounce, toast } from "react-toastify";
+import Players from "./Players";
 
 interface IPlayerCardProps {
-  players: Iplayer;
+  player: Iplayer;
   coin: number;
   setCoin: Dispatch<SetStateAction<number>>;
+  selectedPlayers: Iplayer[];
+  setSelectedPlayers: Dispatch<SetStateAction<Iplayer[]>>;
 }
 
-const PlayerCart = ({ player , coin, setCoin}: IPlayerCardProps) => {
+const PlayerCart = ({
+  player,
+  coin,
+  setCoin,
+  selectedPlayers,
+  setSelectedPlayers,
+}: IPlayerCardProps) => {
   const [isSelected, setIsSelected] = useState(false);
 
-    console.log(coin, setCoin);
+  console.log(coin, setCoin);
 
-    const handleSelectPlayer = () =>{
-      setIsSelected(true)
+  const handleSelectPlayer = () => {
+    setIsSelected(true);
+    const handleSelectPlayer = coin - player.price;
+
+    if (handleSelectPlayer >= 0) {
+      setCoin(handleSelectPlayer);
+      toast(`${player.PlayerName} is purchase successfully`, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+    } else {
+      toast.error("Low Ballance", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
     }
+
+    // selsected players logic
+    setSelectedPlayers([...selectedPlayers, player])
+  };
   return (
     <div className="group relative overflow-hidden rounded-3xl bg-base-100 border border-base-300 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
       {/* Player Image */}
@@ -70,7 +111,7 @@ const PlayerCart = ({ player , coin, setCoin}: IPlayerCardProps) => {
             <span className="text-sm font-semibold">Elite Player</span>
           </div>
         </div>
-          
+
         {/* Playing Style */}
         <div className="grid grid-cols-2 gap-3">
           <div className="rounded-2xl bg-base-200 p-3">
