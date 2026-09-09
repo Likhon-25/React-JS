@@ -1,0 +1,92 @@
+[
+  {
+    "PlayerName": "Shakib Al Hasan",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOuqrHqPH0BYs0oX5AkfU_TqsM4fdCGGuXUrUL5HZZXS_Iv0If0yg4hE&s=10",
+    "origin": "Bangladesh",
+    "playerTyype": "All-Rounder",
+    "bowlingStyle": "Left-arm orthodox",
+    "battingStyle": "Left-hand bat",
+    "price": 805
+  },
+  {
+    "PlayerName": "Mustafizur Rahman",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOuqrHqPH0BYs0oX5AkfU_TqsM4fdCGGuXUrUL5HZZXS_Iv0If0yg4hE&s=10",
+    "origin": "Bangladesh",
+    "playerTyype": "Bowler",
+    "bowlingStyle": "Left-arm fast-medium",
+    "battingStyle": "Left-hand bat",
+    "price": 605
+  },
+  {
+    "PlayerName": "Taskin Ahmed",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOuqrHqPH0BYs0oX5AkfU_TqsM4fdCGGuXUrUL5HZZXS_Iv0If0yg4hE&s=10",
+    "origin": "Bangladesh",
+    "playerTyype": "Bowler",
+    "bowlingStyle": "Right-arm fast",
+    "battingStyle": "Right-hand bat",
+    "price": 555
+  },
+  {
+    "PlayerName": "Litton Das",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOuqrHqPH0BYs0oX5AkfU_TqsM4fdCGGuXUrUL5HZZXS_Iv0If0yg4hE&s=10",
+    "origin": "Bangladesh",
+    "playerTyype": "Wicket-Keeper",
+    "bowlingStyle": "Right-arm medium",
+    "battingStyle": "Right-hand bat",
+    "price": 655
+  },
+  {
+    "PlayerName": "Towhid Hridoy",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOuqrHqPH0BYs0oX5AkfU_TqsM4fdCGGuXUrUL5HZZXS_Iv0If0yg4hE&s=10",
+    "origin": "Bangladesh",
+    "playerTyype": "Batter",
+    "bowlingStyle": "Right-arm off-break",
+    "battingStyle": "Right-hand bat",
+    "price": 455
+  },
+  {
+    "PlayerName": "Najmul Hossain Shanto",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOuqrHqPH0BYs0oX5AkfU_TqsM4fdCGGuXUrUL5HZZXS_Iv0If0yg4hE&s=10",
+    "origin": "Bangladesh",
+    "playerTyype": "Batter",
+    "bowlingStyle": "Right-arm off-break",
+    "battingStyle": "Left-hand bat",
+    "price": 505
+  },
+  {
+    "PlayerName": "Mehidy Hasan Miraz",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOuqrHqPH0BYs0oX5AkfU_TqsM4fdCGGuXUrUL5HZZXS_Iv0If0yg4hE&s=10",
+    "origin": "Bangladesh",
+    "playerTyype": "All-Rounder",
+    "bowlingStyle": "Right-arm off-break",
+    "battingStyle": "Right-hand bat",
+    "price": 555
+  },
+  {
+    "PlayerName": "Rishad Hossain",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOuqrHqPH0BYs0oX5AkfU_TqsM4fdCGGuXUrUL5HZZXS_Iv0If0yg4hE&s=10",
+    "origin": "Bangladesh",
+    "playerTyype": "Bowler",
+    "bowlingStyle": "Right-arm leg-break",
+    "battingStyle": "Right-hand bat",
+    "price": 405
+  },
+  {
+    "PlayerName": "Tanzid Hasan",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOuqrHqPH0BYs0oX5AkfU_TqsM4fdCGGuXUrUL5HZZXS_Iv0If0yg4hE&s=10",
+    "origin": "Bangladesh",
+    "playerTyype": "Batter",
+    "bowlingStyle": "Right-arm off-break",
+    "battingStyle": "Left-hand bat",
+    "price": 3555
+  },
+  {
+    "PlayerName": "Jaker Ali",
+    "playerImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOuqrHqPH0BYs0oX5AkfU_TqsM4fdCGGuXUrUL5HZZXS_Iv0If0yg4hE&s=10",
+    "origin": "Bangladesh",
+    "playerTyype": "Wicket-Keeper",
+    "bowlingStyle": "Right-arm medium",
+    "battingStyle": "Right-hand bat",
+    "price": 350
+  }
+]
