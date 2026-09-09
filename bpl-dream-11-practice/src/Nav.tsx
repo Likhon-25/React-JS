@@ -1,5 +1,5 @@
 import Logo from "./assets/logo.png";
-const Nav = () => {
+const Nav = ({coin}) => {
   return (
     <div className="w-full bg-white">
       <nav className="flex items-center justify-between p-4 max-w-[1320px] mx-auto">
@@ -27,6 +27,11 @@ const Nav = () => {
             </li>
           </ul>
         </div>
+
+         <div className="flex items-center space-x-2 border border-gray-200 rounded-xl px-4 py-2 font-bold text-black shadow-sm">
+            <span>{coin}</span>
+            <span className="text-xl">🪙</span>
+          </div>
       </nav>
     </div>
   );
