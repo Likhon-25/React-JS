@@ -4,6 +4,8 @@ import Nav from "./Nav";
 import Players from "./components/Players";
 import type { Iplayer } from "./Type/Type";
 
+// Practice 
+
 const playerFetch = async (): Promise<Iplayer[]> => {
   const res = await fetch("/data.json");
   const data = await res.json();
